@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>calculadora</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="calculadora.js"></script>
+    </head>
+    <body>
+        <div id="cabeçalho">
+            <header >
+                <h1>Calculadora</h1>
+            </header>
+        </div>
+
+        
+        <div id="buttons">
+            
+            <p id="output"></p>
+            
+            <article >
+                <div id="grid">
+                    <button name="pot" value="%" onclick="quadrado()">x²</button>
+                    <button name="limpaTudo" value="CE" onclick="document.getElementById('output').innerHTML = '';">CE</button>
+                    <button name="limpa" value="L">_</button>
+                    <button name="dividir" value="/" onclick="show('/')">/</button>
+                    <br />
+                    <button nome="7" value="7" onclick="show('7')">7</button>
+                    <button nome="8" value="8" onclick="show('8')">8</button>
+                    <button nome="9" value="9" onclick="show('9')">9</button>
+                    <button nome="x" value="x" onclick="show('*')">x</button>
+                    <br />
+                    <button nome="4" value="4" onclick="show('4')">4</button>
+                    <button nome="5" value="5" onclick="show('5')">5</button>
+                    <button nome="6" value="6" onclick="show('6')">6</button>
+                    <button nome="-" value="-" onclick="show('-')">-</button>
+                    <br />
+                    <button nome="1" value="1" onclick="show('1')">1</button>
+                    <button nome="2" value="2" onclick="show('2')">2</button>
+                    <button nome="3" value="3" onclick="show('3')">3</button>
+                    <button nome="+" value="+" onclick="show('+')">+</button>
+                    <br />
+                    <button nome="," value="," onclick="show('.')">,</button>
+                    <button nome="0" value="0" onclick="show('0')">0</button>
+                    <button nome="=" value="=" onclick="solve()" id="equal">=</button>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
